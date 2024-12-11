@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollspeed = -1.5f;
+    public TextMeshProUGUI scoretext;
     // Start is called before the first frame update
     void Awake()
     {
